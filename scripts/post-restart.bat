@@ -1,3 +1,5 @@
+@echo off
+
 echo Moving for rigth folder
 echo .
 
@@ -47,11 +49,28 @@ echo .
 cd ../..
 rmdir /s /q "C:\Users\Daniel Honey\Downloads\scripts\drivers"
 
+echo Delete Task
+echo .
+
+:: Delete Task from Task Scheduler
+schtasks /delete /tn "post-restart"
+
+echo Install ReviOS post-install
+echo .
+
+:: Download with curl
+mkdir post-install
+cd post-install
+curl -O https://raw.githubusercontent.com/abbodi1406/KMS_VL_ALL_AIO/master/KMS_VL_ALL_AIO.cmd
+curl -O https://us6-dl.techpowerup.com/files/XdJd_TAsQm61wzILr9Xkng/1683876667/Visual-C-Runtimes-All-in-One-Feb-2023.zip
+curl -O https://download.microsoft.com/download/1/7/1/1718CCC4-6315-4D8E-9543-8E28A4E18C4C/dxwebsetup.exe
+
+:: for install i gonna do it for myself 
 echo Disable safe mode
 echo .
 
 :: Enable Integrity Checks
-bcdedit -set loadoptions ENABLE_INTEGRITY_CHECKS ‘Press ENTER’
+bcdedit -set loadoptions ENABLE_INTEGRITY_CHECKS
 bcdedit -set TESTSIGNING OFF
 
 echo Now restart the computer
