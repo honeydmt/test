@@ -4,7 +4,7 @@ bcdedit -set loadoptions DISABLE_INTEGRITY_CHECKS Press ENTER
 bcdedit -set TESTSIGNING ON
 
 :: Create a Task 
-schtasks /create /tn "Setup-Script" /tr "C:\test\test.bat" /sc onlogon
+schtasks /create /tn "Setup-Script" /tr "C:\Users\Daniel Honey\scripts\post-restart.bat" /sc onlogon
 
 :: Restart
 
