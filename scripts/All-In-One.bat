@@ -44,7 +44,7 @@ echo Downloading the script for github
 echo .
 
 :: Script link
-:: (wip for now)
+curl -O https://raw.githubusercontent.com/honeydmt/test/master/scripts/post-restart.bat
 
 echo Now setting gonna activate windows safe mode for drivers install
 echo .
