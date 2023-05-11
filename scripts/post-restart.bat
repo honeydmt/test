@@ -26,8 +26,8 @@ echo Run chipset drivers
 echo .
 
 :: Run chipset drivers first 
-"C:\Users\Daniel Honey\scripts\Downloads\drivers\7347_Chipset_Driver_WFF6P_WN_9.4.0.1027_A00.EXE"
-"C:\Users\Daniel Honey\scripts\Downloads\drivers\Chipset_Driver_8HX85_WN32_8.1.10605.221_A01.EXE"
+"C:\Users\Daniel Honey\Downloads\scripts\drivers\7347_Chipset_Driver_WFF6P_WN_9.4.0.1027_A00.EXE"
+"C:\Users\Daniel Honey\Downloads\scripts\drivers\Chipset_Driver_8HX85_WN32_8.1.10605.221_A01.EXE"
 
 echo Extract PHDGD driver
 echo .
@@ -39,8 +39,8 @@ echo Now run the driver
 echo .
 
 :: Run Setup.exe
-cd "C:\Users\Daniel Honey\scripts\Downloads\drivers\PHDGD Skylake 2.9"
-"C:\Users\Daniel Honey\scripts\Downloads\drivers\PHDGD Skylake 2.9\Setup.exe"
+cd "C:\Users\Daniel Honey\Downloads\scripts\drivers\PHDGD Skylake 2.9"
+"C:\Users\Daniel Honey\Downloads\scripts\drivers\PHDGD Skylake 2.9\Setup.exe"
 
 echo Now self-destruct
 echo .
@@ -66,6 +66,7 @@ curl -O https://us6-dl.techpowerup.com/files/XdJd_TAsQm61wzILr9Xkng/1683876667/V
 curl -O https://download.microsoft.com/download/1/7/1/1718CCC4-6315-4D8E-9543-8E28A4E18C4C/dxwebsetup.exe
 
 :: for install i gonna do it for myself 
+
 echo Disable safe mode
 echo .
 
